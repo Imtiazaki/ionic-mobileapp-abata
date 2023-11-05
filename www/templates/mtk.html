@@ -1,0 +1,15 @@
+<ion-view cache-view="false" title="List Mata Pelajaran">
+
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/mtk-add">Add</a>
+    </div>
+    <ion-list ng-controller="MtkCtrl">
+      <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showMatakuliah" href="#/app/mtk-update/{{x.kdmtk}}">
+        <i class="icon ion-document-text"></i>
+        {{x.namamtk}}
+        <a class="button button-icon icon ion-ios-trash" ng-click="delMtk({{x.kdmtk}})"></a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

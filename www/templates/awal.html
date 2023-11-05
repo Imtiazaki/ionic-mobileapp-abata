@@ -1,0 +1,22 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+  <ion-header-bar>
+  <h1 class="title" align="center">MENU LOGIN</h1>
+   <button class="button" ng-controller="MainCtrl" ng-click="doBack()">Back</button>
+  </ion-header-bar>
+
+  <ion-content class="padding">
+    <div class="kotak_tengah">
+      <form ng-submit="logAdm()">
+          <button class="button button-block button-assertive" type="submit">
+            Login Admin
+          </button>
+      </form>
+
+      <form ng-submit="logMhs()">        
+          <button class="button button-block button-assertive" type="submit">
+            Login Siswa
+          </button>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

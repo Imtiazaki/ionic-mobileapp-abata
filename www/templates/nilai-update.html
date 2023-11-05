@@ -1,0 +1,28 @@
+<ion-view cache-view="false" title="Update Siswa">
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/mhs-add">Add</a>
+    </div>
+    <form ng-submit="updateNilai()">
+      <div clss="list">
+        <input type="hidden" ng-model="nilData.nim" />
+         <input type="hidden" ng-model="nilData.kdmtk" />
+        <label class="item item-input">
+          <span class="input-label">Absen</span>
+          <input type="text" ng-model="nilData.absen" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">UTS</span>
+          <input type="text" ng-model="nilData.uts" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">UAS</span>
+          <input type="text" ng-model="nilData.uas" />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive">Update</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

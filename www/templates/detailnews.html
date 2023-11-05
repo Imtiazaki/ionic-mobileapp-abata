@@ -1,0 +1,15 @@
+<<ion-view>
+  <ion-nav-bar>
+    <ion-nav-buttons side="start">
+      <i class="ion-chevron-left" ng-click="doAbout()"></i>
+    </ion-nav-buttons>
+    <ion-nav-title><center>SDIT ABATA</center></ion-nav-title>
+    </ion-nav-bar>
+  <ion-content>
+    <div class='textnews'align="justify">
+      <h3>{{post.title.rendered}}</h3>
+    </div>
+      <small class="padding">{{post.date | date : "MMM dd y"}}</small>
+      <div class='padding content' ng-bind-html="post.content.rendered"</div>
+  </ion-content>
+</ion-view>

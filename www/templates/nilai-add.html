@@ -1,0 +1,34 @@
+<ion-view cache-view="false" title="Tambah Nilai">
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/nilai-add">Add</a>
+    </div>
+    <form ng-submit="tambahNilai()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">NIS</span>
+          <input type="text" value="" ng-model="nilaiData.nilai_nim" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Kode MP</span>
+          <input type="text" value="" ng-model="nilaiData.nilai_kdmtk" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Absen</span>
+          <input type="text" value="" ng-model="nilaiData.nilai_absen" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">UTS</span>
+          <input type="text" value="" ng-model="nilaiData.nilai_uts" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">UAS</span>
+          <input type="text" value="" ng-model="nilaiData.nilai_uas" />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive">Simpan</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

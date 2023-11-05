@@ -1,0 +1,15 @@
+<ion-view cache-view="false" title="Nilai">
+
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/nilai-add">Add</a>
+    </div>
+    <ion-list ng-controller="NilaiCtrl">
+      <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showNilai" href="#/app/nilai-update/{{x.nim}}">
+          <i class="icon ion-document-text"></i>
+          {{x.nim}} , {{x.kdmtk}} , {{x.absen}} , {{x.uts}} , {{x.uas}}       
+        <a class="button button-icon icon ion-ios-trash" ng-click="delNilai({{x.nim}})"></a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

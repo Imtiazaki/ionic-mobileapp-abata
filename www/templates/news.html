@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-nav-bar>
+        <ion-nav-buttons side="primary">
+            <button class="button" ng-click="doAbout()">Back</button>
+        </ion-nav-buttons>
+        <ion-nav-title>News</ion-nav-title>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+        <div class="padding center>">
+        	<center>
+        	<h2>News</h2>
+           </center>
+        </div>
+        <ion-list> 
+            <ion-item ng-repeat="p in post" href="#/detailnews/{{p.id}}">
+            <strong>{{p.title.rendered}}</strong><br/>
+            <small>{{p.date | date : "dd mm y"}}</small>
+        </ion-item>
+    </ion-list>
+    </ion-content>
+</ion-view>

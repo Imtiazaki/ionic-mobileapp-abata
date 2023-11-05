@@ -1,0 +1,17 @@
+<ion-view cache-view="false" title="List Siswa">
+  
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/mhs-add">Add</a>
+    </div>
+    <ion-list ng-controller="MhsCtrl">
+      <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showMahasiswa" href="#/app/mhs-update/{{x.nim}}">
+        <i class="icon ion-person"></i>
+        {{x.nama}}
+        <a class="button button-icon icon ion-ios-trash" ng-click="delUser({{x.nim}})"></a>
+      </ion-item>
+    </ion-list>
+    
+    
+  </ion-content>
+</ion-view>

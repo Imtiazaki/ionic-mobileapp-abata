@@ -1,0 +1,36 @@
+<ion-view cache-view="false" title="Tambah Siswa">
+
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/mhs-add">Add</a>
+    </div>
+
+    <form ng-submit="tambahMhs()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">NIS</span>
+          <input type="text" value="" ng-model="mahasiswaData.mhs_nim" />
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Nama</span>
+          <input type="text" value="" ng-model="mahasiswaData.mhs_nama" />
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Alamat</span>
+          <input type="text" value="" ng-model="mahasiswaData.mhs_alamat" />
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Jenis Kelamin</span>
+          <input type="text" value="" ng-model="mahasiswaData.mhs_jenkel" />
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-positive">Simpan</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view cache-view="false" title="Update Siswa">
+  <ion-content>
+    <div align="right">
+      <a class="button icon ion-person-add" href="#/app/mhs-add">Add</a>
+    </div>
+
+    <form  ng-submit="updateMhs()">
+      <div clss="list">
+        <input type="hidden" ng-model="mhsData.nim" />
+        <label class="item item-input">
+          <span class="input-label">Nama</span>
+          <input type="text" ng-model="mhsData.nama" />
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Alamat</span>
+          <input type="text" ng-model="mhsData.alamat" />
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Jenkel</span>
+          <input type="text" ng-model="mhsData.jenkel" />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" >Update</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

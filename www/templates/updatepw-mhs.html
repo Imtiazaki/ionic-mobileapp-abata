@@ -1,0 +1,23 @@
+<ion-view cache-view="false" title="Update Password">
+  <ion-content>
+    <form ng-submit="PassMhs()">
+      <div clss="list">
+        <label class="item item-input">
+          <span class="input-label">NIS</span>
+          <input type="text" ng-model="mhsUpdate.nim"  />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Nama</span>
+          <input type="text" ng-model="mhsUpdate.nama"/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="mhsUpdate.pass" />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive">Update Password</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
